@@ -14,9 +14,6 @@ int main(void){
 	printf("Introduzca un valor para x.\n");
 	scanf("%f",&x);
 
-	float check = 1/3;
-	printf("\n\n\n\n%f\n\n\n\n",check);
-
 	//Calculando ambas operaciones
 	op1 = ((0.666666666)*(x-(1-((x-2))/3)))+1; 
 	op2 = 2-((-2*(x+1))-((x-3))/2);
