@@ -14,12 +14,15 @@ int main(void){
 	printf("Introduzca un valor para x.\n");
 	scanf("%f",&x);
 
+	float check = 1/3;
+	printf("\n\n\n\n%f\n\n\n\n",check);
+
 	//Calculando ambas operaciones
-	op1 = ((x-1)/4)-((x-5)/36); 
-	op2 = 6*((x+1)/8-((2*x-3)/16));
+	op1 = ((0.666666666)*(x-(1-((x-2))/3)))+1; 
+	op2 = 2-((-2*(x+1))-((x-3))/2);
 
 	//Escribiendo en la consola los resultados de las operaciones
-	printf("\nEl valor de la operacion ((x-1)/4)-((x-5)/36), donde x es igual a %.2f, es %.4f.\n\nEl valor de la operacion 6*((x+1)/8-((2*x-3)/16)), donde x es igual a %.2f, es %.4f.",x,op1,x,op2);
+	printf("\nEl valor de la operacion ((2/3)*(x-(1-((x-2))/3)))+1, donde x es igual a %.2f, es %.4f.\n\nEl valor de la operacion 2-((-2*(x+1))-((x-3))/2), donde x es igual a %.2f, es %.4f.",x,op1,x,op2);
 	
 	return 0;
 }
