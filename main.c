@@ -55,12 +55,11 @@ int main(void) {
 	
 	/*
 	Las variables utilizadas en esta práctica son las mismas que la práctica anterior, con excepción
-	de op que ahora no es necesaria.
+	de op y sum que ahora no son necesarias.
 	*/
 	
-	//Inicializando flag en 0 para que el ciclo funcione, y sum en 0 para que se le pueda sumar libremente.
+	//Inicializando flag en 0 para que el ciclo funcione.
 	flag = 0;
-	sum = 0;
 	
 	//Mientras flag sea 0, el ciclo va a repetirse
 	while(flag==0){
@@ -69,17 +68,14 @@ int main(void) {
 		printf("\nIntroduzca un numero entero: ");
 		scanf("%d",&num);
 		
-		//Se actualiza el valor de sum, sumándole el nuevo valor de num
-		sum += num;
+		//Se escribe el numero que introdujo
+		printf("\nIntrodujo el numero %d.",num);
 		
 		//Si el número que el usuario introdujo es mayor o igual a 100, el ciclo se detiene.
 		if(num>=100){
 			flag = 1;
 		}
 	}
-	
-	//Imprimiendo el resultado de la suma
-	printf("\nLa suma de los numeros introducidos es: %d.",sum);
 	
 	return 0;
 }
