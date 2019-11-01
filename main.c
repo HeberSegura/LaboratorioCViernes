@@ -51,14 +51,17 @@ int main(void) {
 	*/
 	printf("\n\n***************************\nActividad 2\n");
 	
+	//Declarando variables enteras y obteniendo valores
 	int num1,num2;
 	printf("Introduzca el primer numero entero: ");
 	scanf("%d",&num1);
 	printf("Introduzca el segundo numero entero: ");
 	scanf("%d",&num2);
 	
+	//Inicializando punteros con las localizaciones de las variables anteriores
 	int *n1=&num1,*n2=&num2;
 	
+	//Imprimiendo la sumatoria
 	printf("\n%d + %d = %d",*n1,*n2,(*n1+*n2));
 	
 	return 0;
